@@ -1,0 +1,9 @@
+v1 = [1,3,5,7,9,11,13,15,17,19]
+v2 = [2,4,6,8,10,12,14,16,18,20]
+v3 = []
+
+for indice in range(10):
+    v3.append(v1[indice])
+    v3.append(v2[indice])
+    
+print(v3)
