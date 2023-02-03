@@ -1,0 +1,12 @@
+lista = []
+contador = 1
+
+for num in range(11):
+  add_num = input(f'Digite o {contador}º número: ')
+  if add_num.isdigit():
+    contador += 1
+    lista.append(add_num)
+  else:
+    print ('O Valor digitado não é um número')
+
+print (lista)
