@@ -1,0 +1,14 @@
+notas = []
+
+for x in range(4):
+    try:
+        entrada = float(input ('Digite uma nota: '))
+        if 0 <= entrada <= 10:
+            notas.append(entrada)
+        else:
+           print ('Digite um numero de 0 a 10')      
+    except:
+        print ('Digite um valor válido')
+        continue
+       
+print (sum(notas) // len(notas))
