@@ -1,0 +1,6 @@
+##1.Faça um Programa que leia um vetor de 5 números inteiros e mostre-os.
+
+lista = ['Pao','Azeite','Arroz','Feijao','Abacate']
+
+for compras in lista:
+  print (compras)
