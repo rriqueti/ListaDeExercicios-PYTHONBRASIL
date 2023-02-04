@@ -1,0 +1,15 @@
+#4 Faça um Programa que leia um vetor de 10 caracteres, 
+# e diga quantas consoantes foram lidas. Imprima as consoantes.
+
+consoantes = ['b','c','d','f','g','j','k',
+              'l','m','n','p','q','r','s','t','v','w','x','z']
+
+lista_cons = []
+
+palavra = input ('Digite uma palavra: ')
+
+for i in palavra:
+    if i in consoantes:
+        lista_cons.append(i)
+
+print ('A palavra digitada possui', len(lista_cons), 'consoantes')    
