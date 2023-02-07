@@ -1,0 +1,31 @@
+##O total de votos computados;
+##Os númeos e respectivos votos de todos os jogadores que receberam votos;
+##O percentual de votos de cada um destes jogadores;
+##O número do jogador escolhido como o melhor jogador da partida, juntamente com o número de votos e o percentual de votos dados a ele.
+
+votos_computados = []
+soma_votos = []
+exit = 1
+while exit != 0:
+  voto_recebido = input ('Jogador votado: ')
+  voto_recebido = int(voto_recebido)
+  
+  if voto_recebido >= 1 or voto_recebido <=  23 :
+    votos_computados.append(voto_recebido)
+  
+  if voto_recebido > 23:
+    print ('Digite um número de 1 a 23')
+  
+  if voto_recebido == 0:
+    exit = 0
+    print ('Votação encerrada')
+    break
+
+
+setagem = set(votos_computados)
+for n in setagem:
+    contados = votos_computados.count(n)
+    print (n, 'Votos no jogador ', contados)
+    
+
+print ('Total de votos computados:', len(votos_computados)-1)
