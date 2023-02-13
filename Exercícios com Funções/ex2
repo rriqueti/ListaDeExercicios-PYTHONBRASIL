@@ -1,0 +1,10 @@
+def count(x):
+  contador = 1
+  lista_num = []
+  while contador <= x:
+    lista_num.append(str(contador))
+    print(*lista_num)
+    contador += 1
+
+
+count(5)
