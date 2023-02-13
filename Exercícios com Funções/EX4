@@ -1,0 +1,7 @@
+def positivo_negativo(x):
+  if x <= 0:
+    print('N')
+  else:  
+    print('P')
+
+positivo_negativo()
